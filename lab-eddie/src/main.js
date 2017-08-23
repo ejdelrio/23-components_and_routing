@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import NoteList from './components/note-list'
 
 class App extends React.Component {
   constructor(props) {
@@ -8,7 +9,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <h1>'Life has no meaning'</h1>
+      <div>
+        <h1>{'I am working!!!'}</h1>
+        <NoteList />
+      </div>
     )
   }
 }
