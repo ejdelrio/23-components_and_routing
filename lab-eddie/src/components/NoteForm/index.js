@@ -29,13 +29,14 @@ class NoteForm extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.formSubmit}>
+        <form onSubmit={this.formSubmit} className='main-form'>
           <input
             name='title'
             type='text'
             value={this.state.title}
             placeholder='Note Title'
             onChange={this.onChange}
+            required={true}
           />
           <input
             name='content'
@@ -43,6 +44,7 @@ class NoteForm extends React.Component {
             value={this.state.content}
             placeholder='Note Content'
             onChange={this.onChange}
+            required={true}
           />
           <button type='submit'>{'Cick meeeeeee'}</button>
         </form>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import NoteList from './components/NoteList'
+require('./style/main.scss');
 
 class App extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>{'I am working!!!'}</h1>
+        <h1>{'My aWeSomE Note pAd'}</h1>
         <NoteList appState={this.appState} allNotes={this.state.allNotes} />
       </div>
     )
